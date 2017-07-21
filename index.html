@@ -6,6 +6,7 @@
 			border:1px solid black;
 		}
 	</style>
+	<link rel="stylesheet" type="text/css" href="font-awesome\css\font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </head>
@@ -18,7 +19,7 @@
 			<li class="list-border" ng-repeat="List in Lists">
 				<h2>{{List.title}}</h2>
 				<p>{{List.details}}</p>
-				<button ng-click="deleteTodo(List)">Delete</button>
+				<button ng-click="deleteTodo(List)" class="fa fa-recycle"></button>
 			</li>
 		</ul>
 	</div>
