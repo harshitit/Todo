@@ -18,6 +18,7 @@
 			<li class="list-border" ng-repeat="List in Lists">
 				<h2>{{List.title}}</h2>
 				<p>{{List.details}}</p>
+				<button ng-click="deleteTodo(List)">Delete</button>
 			</li>
 		</ul>
 	</div>
