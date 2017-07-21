@@ -1,10 +1,16 @@
 </!DOCTYPE html>
-<html ng-app="ngTodo">
+<html ng-app='ngTodo'>
 <head>
-	<script src="angular.js"></script>
-	<link rel="stylesheet" type="text/css" href="main.js">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-
+	<div ng-controller="mainController">
+		<ul>
+			<li ng-repeat="List in Lists">
+				{{List}}
+			</li>
+		</ul>
+	</div>
 </body>
 </html>
