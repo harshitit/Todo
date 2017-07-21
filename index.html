@@ -11,6 +11,9 @@
 </head>
 <body>
 	<div ng-controller="mainController">
+		Title: <input type="text" ng-model="title">
+		Details: <input type="text" ng-model="details">
+		<button ng-click="addTodo(title,details)">Add</button>
 		<ul>
 			<li class="list-border" ng-repeat="List in Lists">
 				<h2>{{List.title}}</h2>
