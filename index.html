@@ -15,8 +15,9 @@
 		Title: <input type="text" ng-model="title">
 		Details: <input type="text" ng-model="details">
 		<button ng-click="addTodo(title,details)">Add</button>
+		Search: <input type="text" ng-model="searchBox">
 		<ul>
-			<li class="list-border" ng-repeat="List in Lists">
+			<li class="list-border" ng-repeat="List in Lists | filter:searchBox">
 				<h2>{{List.title}}</h2>
 				<p>{{List.details}}</p>
 				<button ng-click="deleteTodo(List)" class="fa fa-recycle"></button>
